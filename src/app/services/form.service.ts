@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ListModel } from '../models/list.model';
-import { DetailModel } from '../models/detail.model';
 
 @Injectable()
 export class FormService {
@@ -14,8 +13,5 @@ export class FormService {
       form
     );
   }
-  //
-  // getOne(id: number): Observable<DetailModel> {
-  //   return this._httpClient.get<ApiResponse<ListResponse>>;
-  // }
+
 }
