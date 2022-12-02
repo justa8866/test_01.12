@@ -1,0 +1,7 @@
+<h1>Employee</h1>
+<div>id: {{ (params$ | async)?.id }}</div>
+<div *ngIf="product$ | async as product">
+  <div>{{ product.title }}</div>
+  <div>{{ product.price }}$</div>
+  <img src="{{ product.image }}" />
+</div>
